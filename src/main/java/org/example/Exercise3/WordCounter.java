@@ -1,4 +1,4 @@
-package Lesson10.Exercise3;
+package org.example.Exercise3;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import java.util.TreeMap;
 
 public class WordCounter {
     public static void countWords() {
-        File pathToFile = new File("C:\\Users\\Pc\\IdeaProjects\\Lesson 10\\src\\Lesson10\\words.txt");
+        File pathToFile = new File("./src/main/java/org/example/words.txt");
         Map<String, Integer> map = new TreeMap<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(pathToFile))) {
             String line;

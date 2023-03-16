@@ -1,4 +1,4 @@
-package Lesson10.Exercise2;
+package org.example.Exercise2;
 
 
 import com.google.gson.Gson;
@@ -14,8 +14,8 @@ public class UserJsonCreate {
 
     public static void main(String[] args) {
 
-        File pathToWriteFile = new File("C:\\Users\\Pc\\IdeaProjects\\Lesson 10\\src\\Lesson10\\users.json");
-        File pathToReadFile = new File("C:\\Users\\Pc\\IdeaProjects\\Lesson 10\\src\\Lesson10\\names.txt");
+        File pathToWriteFile = new File("./src/main/java/org/example/users.json");
+        File pathToReadFile = new File("./src/main/java/org/example/names.txt");
 
         String json;
         try (BufferedReader reader = new BufferedReader(new FileReader(pathToReadFile))) {

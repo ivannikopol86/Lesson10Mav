@@ -1,4 +1,4 @@
-package Lesson10.Exercise1;
+package org.example.Exercise1;
 
 import java.io.*;
 
@@ -6,7 +6,8 @@ import java.io.*;
 public class CallerID {
     public static void printNumbers() throws IOException {
 
-    File file = new File("C:\\Users\\Pc\\IdeaProjects\\Lesson 10\\src\\Lesson10\\phoneNumbers.txt");
+    File file = new File("./src/main/java/org/example/phoneNumbers.txt");
+        System.out.println("file.exists() = " + file.exists());
 
 
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
@@ -27,6 +28,7 @@ public class CallerID {
 
     public static void main(String[] args) throws IOException {
         printNumbers();
+
 
     }
 

@@ -1,4 +1,4 @@
-package Lesson10.Exercise2;
+package org.example.Exercise2;
 
 public class User {
     private String name;
